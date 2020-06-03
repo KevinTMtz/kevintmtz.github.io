@@ -1,0 +1,13 @@
+body {
+    font-family: 'Nunito';
+}
+
+#optionsBar, #myName {
+    display: flex;
+    justify-content: center;
+}
+
+#optionsBar > a {
+    margin: 0px 5%;
+    text-decoration: none;
+}
