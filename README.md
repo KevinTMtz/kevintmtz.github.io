@@ -1,2 +1,2 @@
-# kevintmtz.github.io
+# KevinTMtz.github.io
 My portfolio.
