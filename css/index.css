@@ -1,60 +1,23 @@
-body {
-    font-family: 'Nunito';
-    color: white;
-    position: relative;
-    margin: auto;
-    width: 95%;
-    max-width: 1450px;
-    background-color: black;
-}
-
-h1 {
-    margin: 0px;
-}
-
-#optionsBar, #myName, #accounts, #myAnimoji, a {
+#myAnimoji {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#accounts > a {
-    margin: 0px 0px 0px 15px;
+#myAnimoji > img {
+    width: 500px; 
+    height:auto;
 }
 
-#accounts > a > img {
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    transition-duration: 0.3s;
+.myInfo p {
+    text-align: justify;
 }
 
-#accounts > a > img:hover {
-    height: 45px;
-}
-
-#optionsBar {
-    border-bottom: 2px solid white;
-    padding: 10px 0px;
-    font-size: 30;
-}
-
-#optionsBar > a {
-    color: rgb(199, 199, 199);
-    margin: 0px 5%;
-    text-decoration: none;
-    font-size: 19px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.25s;
-}
-
-#optionsBar > a:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-}
-
-#myName {
-    justify-content: space-between;
-    border-bottom: 2px solid white;
-    padding: 15px 0px;
-    height: 45px;
+/***********************************
+Responsive
+***********************************/
+@media screen and (max-width: 600px) {
+    #myAnimoji > img {
+        max-width: 90%;
+    }
 }
