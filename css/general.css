@@ -1,15 +1,22 @@
+body, html {
+    height: 100%;
+}
+
 body {
     font-family: 'Nunito';
     color: white;
     position: relative;
     margin: auto;
     width: 95%;
-    max-width: 1450px;
+    max-width: 1200px;
     background-color: black;
 }
 
 h1 {
     margin: 0px;
+    /* background: -webkit-linear-gradient(45deg, rgb(124, 50, 244), rgb(0, 187, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 #optionsBar, #myName, #accounts, #myAnimoji, a {
@@ -25,25 +32,24 @@ h1 {
 #accounts > a > img {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    transition-duration: 0.3s;
-    height: 40px;
+    transition-duration: 0.2s;
+    height: 38px;
 }
 
 #accounts > a > img:hover {
-    height: 45px;
+    height: 40px;
 }
 
 #optionsBar {
     border-bottom: 2px solid white;
-    padding: 10px 0px;
-    font-size: 30;
+    padding: 8px 0px;
 }
 
 #optionsBar > a {
     color: rgb(199, 199, 199);
     margin: 0px 5%;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 18px;
     transition-timing-function: ease-out;
     transition-duration: 0.25s;
 }
@@ -56,8 +62,8 @@ h1 {
 #myName {
     justify-content: space-between;
     border-bottom: 2px solid white;
-    padding: 15px 0px;
-    height: 45px;
+    padding: 10px 0px;
+    height: 40px;
 }
 
 #myName > #smallName, #myName > #middleName {
@@ -78,6 +84,11 @@ Responsive
 }
 
 @media screen and (max-width: 485px) {
+    body {
+        margin: 0px 16px;
+        width: auto;
+    }
+    
     #myName > #smallName {
         display: block;
     }
@@ -90,7 +101,7 @@ Responsive
         margin: 0px 0px 0px 8px;
     }
     
-    #accounts > a > img {
+    #accounts > a > img, #accounts > a > img:hover {
         height: 35px;
     }
 }

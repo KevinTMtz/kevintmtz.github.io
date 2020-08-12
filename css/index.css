@@ -1,3 +1,36 @@
+#bigScreen {
+    background: -webkit-linear-gradient(90deg, rgb(0, 0, 0), rgb(72, 1, 187));
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bigScreen p {
+    text-align: center;
+    font-size: 15vw;
+    font-weight: 900;
+}
+
+p {
+    font-size: 18px;    
+}
+
+.myInfo > div {
+    border-radius: 20px;
+    padding: 20px;
+    background: -webkit-linear-gradient(45deg, rgb(124, 50, 244), rgb(0, 167, 230));
+}
+
+.myInfo h3, .myInfo ul {
+    margin: 0px;
+}
+
+.myInfo p {
+    margin: 5px 0px;
+    text-align: justify;
+}
+
 #myAnimoji {
     display: flex;
     justify-content: center;
@@ -7,10 +40,6 @@
 #myAnimoji > img {
     width: 500px; 
     height:auto;
-}
-
-.myInfo p {
-    text-align: justify;
 }
 
 /***********************************
