@@ -5,6 +5,10 @@ body, html {
     height: 100%;
 }
 
+.top {
+    font-weight: bold;
+}
+
 .limiterDiv {
     margin: auto;
     width: 95%;
@@ -55,7 +59,7 @@ p {
 }
 
 #optionsBar > a {
-    color: rgb(199, 199, 199);
+    color: rgb(165, 165, 165);
     margin: 0px 5%;
     text-decoration: none;
     font-size: 18px;
