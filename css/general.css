@@ -1,22 +1,30 @@
+/***********************************
+MARK: - Style
+***********************************/
 body, html {
     height: 100%;
 }
+
+.limiterDiv {
+    margin: auto;
+    width: 95%;
+    max-width: 1200px;
+} 
 
 body {
     font-family: 'Nunito';
     color: white;
     position: relative;
     margin: auto;
-    width: 95%;
-    max-width: 1200px;
     background-color: black;
 }
 
 h1 {
     margin: 0px;
-    /* background: -webkit-linear-gradient(45deg, rgb(124, 50, 244), rgb(0, 187, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+}
+
+p {
+    font-size: 18px;
 }
 
 #optionsBar, #myName, #accounts, #myAnimoji, a {
@@ -41,6 +49,7 @@ h1 {
 }
 
 #optionsBar {
+    border-top: 2px solid white;
     border-bottom: 2px solid white;
     padding: 8px 0px;
 }
@@ -61,7 +70,6 @@ h1 {
 
 #myName {
     justify-content: space-between;
-    border-bottom: 2px solid white;
     padding: 10px 0px;
     height: 40px;
 }
@@ -71,7 +79,7 @@ h1 {
 }
 
 /***********************************
-Responsive
+MARK: - Responsive
 ***********************************/
 @media screen and (max-width: 650px) {
     #myName > #middleName {
@@ -84,7 +92,7 @@ Responsive
 }
 
 @media screen and (max-width: 485px) {
-    body {
+    .limiterDiv {
         margin: 0px 16px;
         width: auto;
     }
