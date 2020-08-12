@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kevin's Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Kevin's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" sizes="any">
-  <link href="css/general.css" type="text/css" rel="stylesheet">
-  <link href="css/index.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-  
-  <script type="text/javascript" src="js/jquery.js"></script>
-</head>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" sizes="any" />
+    <link href="css/general.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <!--Content of the top bar-->
-  <header class="top">
-    <div id="myName">
-      <h1 id="bigName">Kevin Torres Martínez</h1>
-      <h1 id="middleName">Kevin Torres</h1>
-      <h1 id="smallName">Kevin</h1>
-  
-      <div id="accounts">
-          <!-- <a>
-            <img class="iconsAccounts" src="img/iconCV.svg">
-          </a> -->
-          <a href="https://github.com/KevinTMtz" target="_blank">
-            <img class="iconsAccounts" src="img/iconGithub.svg">
-          </a>
-          <a href="http://www.linkedin.com/in/kevintorresmtz" target="_blank">
-            <img class="iconsAccounts" src="img/iconLinkedin.svg">
-          </a>
-          <a href="https://codeforces.com/profile/KevinTMtz" target="_blank">
-            <img class="iconsAccounts" src="img/iconCodeforces.svg">
-          </a>
-          <a href="https://www.hackerrank.com/KevinTMtz" target="_blank">
-            <img class="iconsAccounts" src="img/iconHackerrank.svg">
-          </a>
-          <!-- <a href="https://twitter.com" target="_blank">
-            <img class="iconsAccounts" src="img/iconTwitter.svg" height="45px">
-          </a> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </head>
+
+  <body>
+    <div id="bigScreen"></div>
+    <p id="bigQuote">Think Big</p>
+
+    <!--Content of the top bar-->
+    <header class="top">
+      <div class="limiterDiv">
+        <div id="myName">
+          <h1 id="bigName">Kevin Torres Martínez</h1>
+          <h1 id="middleName">Kevin Torres</h1>
+          <h1 id="smallName">Kevin</h1>
+
+          <div id="accounts">
+            <!-- <a>
+              <img class="iconsAccounts" src="img/iconCV.svg">
+            </a> -->
+            <a href="https://github.com/KevinTMtz" target="_blank">
+              <img class="iconsAccounts" src="img/iconGithub.svg" />
+            </a>
+            <a href="http://www.linkedin.com/in/kevintorresmtz" target="_blank">
+              <img class="iconsAccounts" src="img/iconLinkedin.svg" />
+            </a>
+            <a href="https://codeforces.com/profile/KevinTMtz" target="_blank">
+              <img class="iconsAccounts" src="img/iconCodeforces.svg" />
+            </a>
+            <a href="https://www.hackerrank.com/KevinTMtz" target="_blank">
+              <img class="iconsAccounts" src="img/iconHackerrank.svg" />
+            </a>
+            <!-- <a href="https://twitter.com" target="_blank">
+              <img class="iconsAccounts" src="img/iconTwitter.svg" height="45px">
+            </a> -->
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div id="optionsBar">
-        <a href="./index.html" style="color: rgb(255, 255, 255); font-weight: 600;">About Me</a>
+
+      <div id="optionsBar">
+        <a href="./index.html" style="color: rgb(255, 255, 255); font-weight: 600;">
+          About Me
+        </a>
         <a href="./projects.html">My Projects</a>
-    </div>
-  </header>
-  
-  <div id="bigScreen">
-    <p>
-      Think Big
-    </p>
-  </div>
+      </div>
 
-  <!--Section-->
-  <p>Computer Science Student of Tec de Monterrey (ITESM) with more than two years of experience in the application of different technologies and tools focused on software development.</p>
-  
-  <section class="myInfo">
-    <h2>Education</h2>
-    <div>
-      <h3>Date & Institution</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <ul>
-        <li>Swift</li>
-        <li>Java</li>
-        <li>C++</li>
-      </ul>
-    </div>
-  </section>
-  
-  <section class="myInfo">
-    <h2>Skills</h2>
-    <p></p>
-  </section>
-  
-  <section class="myInfo">
-    <h2>Honors and awards</h2>
-    <p></p>
-  </section>
-  
-  <section class="myInfo">
-    <h2>Activities and Leadership</h2>
-    <p></p>
-  </section>
-  
-  <section id="myAnimoji">
-    <img src="img/WWDC.jpeg">
-  </section>
-</body>
+      <section id="scrollIndicator">
+        <span></span>
+      </section>
+    </header>
 
+    <div class="limiterDiv">
+      <!--Section-->
+      <p id="myDescription" style="text-align: center;">
+        Computer Science Student of Tec de Monterrey (ITESM) with more than two
+        years of experience in the application of different technologies and
+        tools focused on software development.
+      </p>
+
+      <section class="myInfo">
+        <h2>Education</h2>
+        <div>
+          <h3>Date & Institution</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul>
+            <li>Swift</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="myInfo">
+        <h2>Skills</h2>
+        <p></p>
+      </section>
+
+      <section class="myInfo">
+        <h2>Honors and awards</h2>
+        <p></p>
+      </section>
+
+      <section class="myInfo">
+        <h2>Activities and Leadership</h2>
+        <p></p>
+      </section>
+
+      <section id="myAnimoji">
+        <img src="img/WWDC.jpeg" />
+      </section>
+    </div>
+  </body>
 </html>
