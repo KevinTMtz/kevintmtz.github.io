@@ -15,6 +15,12 @@
     />
 
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>  
+      window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+      }; 
+</script>
   </head>
 
   <body>
@@ -66,7 +72,7 @@
 
     <div class="limiterDiv">
       <!--Section-->
-      <p id="myDescription" style="text-align: center;">
+      <p id="myDescription" style="text-align: center; font-size: 20px;">
         Computer Science Student of Tec de Monterrey (ITESM) with more than two
         years of experience in the application of different technologies and
         tools focused on software development.
@@ -75,12 +81,12 @@
       <h2 class="myInfoTitle">Education</h2>
       <section class="myInfo" id="educationSection">
         <div>
-          <h3>2018-Present, Tecnológico de Monterrey</h3>
+          <h3>2018-2022 (expected), Tecnológico de Monterrey</h3>
           <p>
-            Bachelor of Engineering - BE, Computer Science and Technology. Major GPA: 4.0.
+            Bachelor of Engineering, Computer Science and Technology. Major GPA: 4.0.
           </p>
           <ul>
-            <li>Relevant coursework: Data structures, Discrete math, Data bases, Operating systems.</li>
+            <li>Relevant coursework: Data structures, Computational mathematics, Advanced data bases, Operating systems.</li>
             <li>Groups: Competitive programming club</li>
           </ul>
         </div>
@@ -88,10 +94,11 @@
         <div>
           <h3>2015-2018, Instituto Politécnico Nacional</h3>
           <p>
-            High school, Electrical installations and maintenance technician, Electrical and Electronic. Major GPA: 4.0.
+            High school, Electrical and Electronic technician. Major GPA: 4.0.
           </p>
           <ul>
             <li>Highest honors</li>
+            <li>Investigator Training Stimulus Grant (BEIFI in spanish)</li>
           </ul>
         </div>
       </section>
@@ -112,7 +119,7 @@
       </section>
 
       <section id="myAnimoji">
-        <img src="img/WWDC.jpeg" />
+        <img src="img/WWDC.jpeg"/>
       </section>
     </div>
   </body>
