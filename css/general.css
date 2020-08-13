@@ -72,14 +72,14 @@ p {
     font-weight: 600;
 }
 
+#myName > #smallName, #myName > #middleName {
+    display: none;
+}
+
 #myName {
     justify-content: space-between;
     padding: 10px 0px;
     height: 40px;
-}
-
-#myName > #smallName, #myName > #middleName {
-    display: none;
 }
 
 /***********************************
