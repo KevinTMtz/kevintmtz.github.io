@@ -40,16 +40,6 @@ MARK: - Style
     position: 100%;
 }
 
-.myInfo > div {
-    border-radius: 20px;
-    padding: 20px;
-    background: -webkit-linear-gradient(
-        45deg,
-        rgb(124, 50, 244),
-        rgb(0, 167, 230)
-    );
-}
-
 .myInfo h2 {
     /* background: -webkit-linear-gradient(rgb(124, 50, 244), rgb(0, 187, 255));
     -webkit-background-clip: text;
@@ -66,6 +56,26 @@ MARK: - Style
     text-align: justify;
 }
 
+#educationSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#educationSection div {
+    border-radius: 20px;
+    padding: 20px;
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(124, 50, 244),
+        rgb(0, 167, 230)
+    );
+    margin-bottom: 20px;
+    width: 45%;
+    height: auto;
+    font-size: 18px;
+}
+
 #myAnimoji {
     display: flex;
     justify-content: center;
@@ -80,6 +90,13 @@ MARK: - Style
 /***********************************
 MARK: - Responsive
 ***********************************/
+
+@media screen and (max-width: 950px) {
+    #educationSection div {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #myAnimoji > img {
         max-width: 90%;
