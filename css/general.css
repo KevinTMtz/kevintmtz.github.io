@@ -1,0 +1,119 @@
+/***********************************
+MARK: - Style
+***********************************/
+body, html {
+    height: 100%;
+}
+
+.top {
+    font-weight: bold;
+}
+
+.limiterDiv {
+    margin: auto;
+    width: 95%;
+    max-width: 1200px;
+} 
+
+body {
+    font-family: 'Nunito';
+    color: white;
+    position: relative;
+    margin: auto;
+    background-color: black;
+}
+
+h1 {
+    margin: 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#optionsBar, #myName, #accounts, #myAnimoji, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accounts > a {
+    margin: 0px 0px 0px 15px;
+}
+
+#accounts > a > img {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    height: 38px;
+}
+
+#accounts > a > img:hover {
+    height: 40px;
+}
+
+#optionsBar {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 8px 0px;
+}
+
+#optionsBar > a {
+    color: rgb(165, 165, 165);
+    margin: 0px 5%;
+    text-decoration: none;
+    font-size: 18px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.25s;
+}
+
+#optionsBar > a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#myName > #smallName, #myName > #middleName {
+    display: none;
+}
+
+#myName {
+    justify-content: space-between;
+    padding: 10px 0px;
+    height: 40px;
+}
+
+/***********************************
+MARK: - Responsive
+***********************************/
+@media screen and (max-width: 650px) {
+    #myName > #middleName {
+        display: block;
+    }
+
+    #myName > #bigName {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .limiterDiv {
+        margin: 0px 16px;
+        width: auto;
+    }
+    
+    #myName > #smallName {
+        display: block;
+    }
+
+    #myName > #middleName {
+        display: none;
+    }
+
+    #accounts > a {
+        margin: 0px 0px 0px 8px;
+    }
+    
+    #accounts > a > img, #accounts > a > img:hover {
+        height: 35px;
+    }
+}

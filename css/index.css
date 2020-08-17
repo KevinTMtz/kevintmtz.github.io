@@ -1,0 +1,205 @@
+/***********************************
+MARK: - Style
+***********************************/
+.top {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+#bigScreen {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: -webkit-linear-gradient(90deg, rgb(0, 0, 0), rgb(68, 2, 160), rgb(68, 2, 160));
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bigQuote {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 17vw;
+    width: 90%;
+    font-weight: 900;
+}
+
+#myDescription {
+    position: 100%;
+}
+
+.myInfo h2 {
+    /* background: -webkit-linear-gradient(rgb(124, 50, 244), rgb(0, 187, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.myInfo h3,
+.myInfo ul {
+    margin: 0px;
+}
+
+.myInfo p {
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+#educationSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#educationSection div {
+    border-radius: 20px;
+    padding: 20px;
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(124, 50, 244),
+        rgb(0, 167, 230)
+    );
+    margin-bottom: 20px;
+    width: 45%;
+    height: auto;
+    font-size: 18px;
+}
+
+#myAnimoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myAnimoji > img {
+    width: 500px;
+    height: auto;
+}
+
+/***********************************
+MARK: - Responsive
+***********************************/
+
+@media screen and (max-width: 950px) {
+    #educationSection div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #myAnimoji > img {
+        max-width: 90%;
+    }
+}
+
+/***********************************
+MARK: - Animations
+***********************************/
+#bigQuote {
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#scrollIndicator {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 90px;
+    bottom: 0px;
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+#scrollIndicator span {
+    width: 40px;
+    height: 40px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 3s infinite;
+    animation: sdb05 3s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
