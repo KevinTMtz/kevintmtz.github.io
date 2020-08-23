@@ -40,6 +40,16 @@ MARK: - Style
     position: 100%;
 }
 
+.myInfoTitle {
+    font-size: 26px;
+}
+
+.myInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .myInfo h2 {
     /* background: -webkit-linear-gradient(rgb(124, 50, 244), rgb(0, 187, 255));
     -webkit-background-clip: text;
@@ -56,24 +66,49 @@ MARK: - Style
     text-align: justify;
 }
 
-#educationSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#educationSection div {
+.myInfo div {
     border-radius: 20px;
     padding: 20px;
-    background: -webkit-linear-gradient(
-        45deg,
-        rgb(124, 50, 244),
-        rgb(0, 167, 230)
-    );
+    
     margin-bottom: 20px;
-    width: 45%;
+    width: 46%;
     height: auto;
     font-size: 18px;
+}
+
+.myInfo#educationSection div {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(109, 26, 227),
+        rgb(0, 123, 230)
+    );
+}
+
+.myInfo#skillsSection div {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(124, 50, 230),
+        rgb(0, 167, 230)
+    );
+}
+
+.myInfo#honorsSection div {
+    background: white;
+    color: black;
+}
+
+.myInfo#honorsSection h3 {
+    background: -webkit-linear-gradient(45deg, rgb(124, 50, 244), rgb(0, 187, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.myInfo#activitiesSection div {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(14, 138, 80),
+        rgb(30, 174, 52)
+    );
 }
 
 #myAnimoji {
@@ -83,6 +118,7 @@ MARK: - Style
 }
 
 #myAnimoji > img {
+    margin-top: 40px;
     width: 500px;
     height: auto;
 }
@@ -92,7 +128,7 @@ MARK: - Responsive
 ***********************************/
 
 @media screen and (max-width: 950px) {
-    #educationSection div {
+    .myInfo div {
         width: 100%;
     }
 }
