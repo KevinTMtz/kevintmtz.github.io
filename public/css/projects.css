@@ -2,7 +2,84 @@
 MARK: - Style
 ***********************************/
 
+.projectDiv {
+    margin: 20px 0px 30px 0px;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectNameDiv {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectDescription {
+    padding: 40px;
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    text-align: justify;
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(125, 26, 227),
+        rgb(0, 123, 230)
+    );
+    font-size: 20px;
+}
+
+.projectDescription p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+h2.projectName {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+    background: -webkit-linear-gradient(45deg, rgb(124, 50, 244), rgb(0, 187, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img.projectImg {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
 
 /***********************************
 MARK: - Responsive
 ***********************************/
+
+@media screen and (max-width: 800px) {
+    .projectDiv {
+        flex-direction: column;
+    }
+
+    .projectNameDiv {
+        width: calc(100% - 40px);
+    }
+
+    .projectDescription {
+        width: calc(100% - 40px);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        padding: 20px;
+    }
+
+    img.projectImg {
+        max-height: 280px;
+    }
+}
