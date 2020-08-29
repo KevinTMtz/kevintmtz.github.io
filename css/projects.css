@@ -22,8 +22,8 @@ MARK: - Style
 }
 
 .projectDescription {
-  padding: 40px;
-  width: 44%;
+  padding: 20px;
+  width: calc(50% - 40px);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background: -webkit-linear-gradient(
@@ -32,6 +32,9 @@ MARK: - Style
     rgb(0, 123, 230)
   );
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projectDescription p {
@@ -67,6 +70,22 @@ h2.projectName {
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.7);
   }
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectLinks a {
+  color: white;
+  margin-top: 20px;
+  width: 46%;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  min-height: 35px;
 }
 
 /***********************************
