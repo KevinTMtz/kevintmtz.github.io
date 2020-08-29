@@ -82,6 +82,18 @@ p {
     height: 40px;
 }
 
+#myAnimoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myAnimoji > img {
+    margin-top: 40px;
+    width: 500px;
+    height: auto;
+}
+
 /***********************************
 MARK: - Responsive
 ***********************************/
@@ -92,6 +104,12 @@ MARK: - Responsive
 
     #myName > #bigName {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #myAnimoji > img {
+        max-width: 90%;
     }
 }
 
