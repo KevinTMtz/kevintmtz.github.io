@@ -2,7 +2,96 @@
 MARK: - Style
 ***********************************/
 
+.projectDiv {
+  margin: 20px 0px 30px 0px;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.projectNameDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-size: cover;
+  background-position: 50%;
+  min-height: 300px;
+}
+
+.projectDescription {
+  padding: 40px;
+  width: 44%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(125, 26, 227),
+    rgb(0, 123, 230)
+  );
+  font-size: 20px;
+}
+
+.projectDescription p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+h2.projectName {
+  padding: 15px;
+  width: calc(100% - 40px);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: left;
+  margin: 0px;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(149, 44, 254),
+    rgb(61, 106, 255)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectTitleDiv {
+  border-top-left-radius: 20px;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .projectTitleDiv {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
 
 /***********************************
 MARK: - Responsive
 ***********************************/
+
+@media screen and (max-width: 800px) {
+  .projectDiv {
+    flex-direction: column;
+  }
+
+  .projectNameDiv {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .projectDescription {
+    width: calc(100% - 40px);
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+  }
+
+  .projectTitleDiv {
+    border-top-right-radius: 20px;
+  }
+}
