@@ -42,14 +42,12 @@ p {
 }
 
 #accounts > a > img {
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     height: 38px;
 }
 
 #accounts > a > img:hover {
-    height: 40px;
+    transform: scale(1.1);
 }
 
 #optionsBar {
@@ -64,12 +62,13 @@ p {
     text-decoration: none;
     font-size: 18px;
     transition-timing-function: ease-out;
-    transition-duration: 0.25s;
+    transition-duration: 0.3s;
 }
 
 #optionsBar > a:hover {
     color: rgb(255, 255, 255);
     font-weight: 600;
+    transform: scale(1.05);
 }
 
 #myName > #smallName, #myName > #middleName {
