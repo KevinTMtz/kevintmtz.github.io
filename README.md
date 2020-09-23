@@ -1,2 +1,2 @@
 # KevinTMtz.github.io
-My portfolio.
+Learn about me and some of my projects.
