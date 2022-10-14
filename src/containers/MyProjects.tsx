@@ -187,10 +187,6 @@ const MyProjects = () => (
         </div>
       </div>
     </section>
-
-    <section id='myAnimoji'>
-      <img src='img/WWDC.jpeg' alt='TODO' />
-    </section>
   </div>
 );
 

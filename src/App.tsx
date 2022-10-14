@@ -24,6 +24,10 @@ const App = () => {
       <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
       {pages[`${currentPage}`]()}
+
+      <section id='myAnimoji'>
+        <img src='img/WWDC.jpeg' alt='TODO' />
+      </section>
     </div>
   );
 };

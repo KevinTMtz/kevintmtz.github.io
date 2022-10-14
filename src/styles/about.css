@@ -89,8 +89,23 @@ MARK: - Style
   margin: 10px;
 }
 
+.myInfo#skillsSection p {
+  margin: 0 0 5px 0;
+}
+
 .myInfo#skillsSection img {
   width: 40px;
+}
+
+.myInfo#experienceSection div {
+  width: 100%;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 161, 241, 0.85) 10%,
+    rgba(124, 187, 0, 0.85) 33%,
+    rgba(255, 187, 0, 0.85) 66%,
+    rgba(246, 83, 20, 0.85) 90%
+  );
 }
 
 .myInfo#educationSection div {
@@ -133,6 +148,19 @@ MARK: - Responsive
 @media screen and (max-width: 950px) {
   .myInfo div {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .myInfo#experienceSection div {
+    width: 100%;
+    background: -webkit-linear-gradient(
+      -90deg,
+      rgba(0, 161, 241, 0.85) 0%,
+      rgba(124, 187, 0, 0.85) 33%,
+      rgba(255, 187, 0, 0.85) 66%,
+      rgba(246, 83, 20, 0.85) 90%
+    );
   }
 }
 
