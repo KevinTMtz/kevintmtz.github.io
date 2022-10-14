@@ -1,0 +1,157 @@
+/***********************************
+MARK: - Style
+***********************************/
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.top {
+  font-weight: bold;
+}
+
+.limiterDiv {
+  margin: auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.top > .limiterDiv {
+  padding: 10px 0px;
+}
+
+body {
+  font-family: 'Nunito';
+  color: white;
+  position: relative;
+  margin: auto;
+  background-color: black;
+}
+
+h1 {
+  margin: 0px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#optionsBar,
+#myName,
+#accounts,
+#myAnimoji,
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accounts > a {
+  margin: 0px 0px 0px 15px;
+}
+
+#accounts > a > img {
+  transition-duration: 0.3s;
+  height: 38px;
+}
+
+#accounts > a > img:hover {
+  transform: scale(1.1);
+}
+
+#optionsBar {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 8px 0px;
+}
+
+#optionsBar > button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  outline: inherit;
+  color: rgb(165, 165, 165);
+  margin: 0px 5%;
+  text-decoration: none;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+}
+
+#optionsBar > button:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transform: scale(1.05);
+}
+
+#myName > #smallName,
+#myName > #middleName {
+  display: none;
+}
+
+#myName {
+  justify-content: space-between;
+  padding: 10px 0px;
+  height: 40px;
+}
+
+#myAnimoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myAnimoji > img {
+  margin-top: 40px;
+  width: 500px;
+  height: auto;
+}
+
+/***********************************
+MARK: - Responsive
+***********************************/
+@media screen and (max-width: 650px) {
+  #myName > #middleName {
+    display: block;
+  }
+
+  #myName > #bigName {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #myAnimoji > img {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .limiterDiv {
+    margin: 0px 16px;
+    width: auto;
+  }
+
+  #myName > #smallName {
+    display: block;
+  }
+
+  #myName > #middleName {
+    display: none;
+  }
+
+  #accounts > a {
+    margin: 0px 0px 0px 8px;
+  }
+
+  #accounts > a > img,
+  #accounts > a > img:hover {
+    height: 35px;
+  }
+}
