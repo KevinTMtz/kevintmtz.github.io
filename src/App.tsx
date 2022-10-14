@@ -1,5 +1,4 @@
-import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
 
 import NavBar from './components/NavBar';
 import AboutMe from './containers/AboutMe';
@@ -9,17 +8,22 @@ import './styles/general.css';
 import './styles/about.css';
 import './styles/projects.css';
 
+import { ObjectByKey } from './types/types';
+import { Pages } from './enums/pages';
+
 const App = () => {
+  const pages: ObjectByKey = {
+    [Pages.AboutMe]: AboutMe,
+    [Pages.MyProjects]: MyProjects,
+  };
+
+  const [currentPage, setCurrentPage] = useState<Pages>(Pages.AboutMe);
+
   return (
     <div>
-      <NavBar />
+      <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
-      <Routes>
-        <Route path='about-me' element={<AboutMe />} />
-        <Route path='my-projects' element={<MyProjects />} />
-
-        <Route path='*' element={<Navigate to='about-me' replace />} />
-      </Routes>
+      {pages[`${currentPage}`]()}
     </div>
   );
 };

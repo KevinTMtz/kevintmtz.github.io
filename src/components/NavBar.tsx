@@ -1,11 +1,14 @@
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { Dispatch, SetStateAction } from 'react';
 
-const NavBar = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+import { Pages } from '../enums/pages';
 
-  const isAboutMe = location.pathname === '/about-me';
+interface NavBarProps {
+  currentPage: Pages;
+  setCurrentPage: Dispatch<SetStateAction<Pages>>;
+}
+
+const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => {
+  const isAboutMe = props.currentPage === Pages.AboutMe;
 
   return (
     <header
@@ -81,13 +84,13 @@ const NavBar = () => {
 
       <div id='optionsBar'>
         <button
-          onClick={() => navigate('/about-me')}
+          onClick={() => props.setCurrentPage(Pages.AboutMe)}
           style={{ color: isAboutMe ? 'white' : undefined }}
         >
           About Me
         </button>
         <button
-          onClick={() => navigate('/my-projects')}
+          onClick={() => props.setCurrentPage(Pages.MyProjects)}
           style={{ color: !isAboutMe ? 'white' : undefined }}
         >
           My Projects
