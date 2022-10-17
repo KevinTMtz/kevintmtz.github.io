@@ -5,6 +5,72 @@ import Project from '../components/Project';
 const MyProjects = () => {
   const projects = [
     {
+      name: 'Sentinel',
+      imagePath: 'img/projects/sentinel/main.jpg',
+      description:
+        'Data analysis platform for statistical and sentiment analysis for tweets in Mexico.',
+      points: [
+        'Reports generated in real time by search or periodical subscription',
+        'Statistics report with interactive charts and maps',
+      ],
+      technologies:
+        'Front-end: React & Typescript, hosted in Heroku. Back-end: NodeJS & Express.',
+      githubUrl: 'https://github.com/KevinTMtz/Sentinel',
+      webpageUrl: 'https://sentinel-web-app.herokuapp.com',
+    },
+    {
+      name: 'Waste Tracker',
+      imagePath: 'img/projects/wasteTracker/main.jpg',
+      description:
+        'Android app for the reduction of waste generation in homes.',
+      points: [
+        'Waste type identification with an image recognition machine learning model',
+        'Calculate individual yearly waste production from a questionnaire',
+      ],
+      technologies: 'Kotlin & Android Studio.',
+      githubUrl: 'https://github.com/KevinTMtz/WasteTracker',
+    },
+    {
+      name: 'MedCLIP - AI model',
+      imagePath: 'img/projects/medCLIPmodel/main.jpeg',
+      description:
+        'Deep learning model for medical imaging diagnosis (X-Ray, CT and MRI).',
+      points: [
+        'Model architecture with multiple encoders and attention mechanism',
+        'MedPix and CheXpert databases used for training the model',
+      ],
+      technologies:
+        'Model API developed in Python and hosted in Heroku for MedCLIP web portal. Developed with Tensorflow.',
+      githubUrl: 'https://github.com/KevinTMtz/MedCLIPModel',
+    },
+    {
+      name: 'MedCLIP',
+      imagePath: 'img/projects/medCLIP/main.jpg',
+      description:
+        'Web portal for uploading and sharing of medical cases, and automatic diagnosis using the MedCLIP model API.',
+      points: [
+        'User account system & publications with different privacy levels',
+      ],
+      technologies:
+        'Front-end: React & Typescript, hosted in Microsoft Azure. Back-end: NodeJS & MySQL database.',
+      githubUrl: 'https://github.com/KevinTMtz/MedCLIP',
+    },
+    {
+      name: 'Dauverre Web',
+      imagePath: 'img/projects/dauverre/main.jpg',
+      description:
+        'Web app for the promotion of Davuerre A.C. (foster home for elders) & Web application for the administration of the website and the residents of the institution.',
+      points: [
+        'User account system',
+        'Creation, edition & deletion of posts',
+        'Registration, edition & deletion of residents',
+        'Creation of mood reports',
+      ],
+      technologies: 'React & Typescript, hosted in Firebase.',
+      githubUrl: 'https://github.com/KevinTMtz/DauverreWeb',
+      webpageUrl: 'https://dauverre-ac.web.app',
+    },
+    {
       name: 'iOS Apps',
       imagePath: 'img/projects/iosApps/main.png',
       description:
@@ -35,7 +101,7 @@ const MyProjects = () => {
       description:
         'Webpage and App for the promotion of an electronic device called Knocki. The app prototype has local data save to simulate the interaction with the device and its functionality.',
       points: ['Beautiful interface focused on human-computer interaction'],
-      technologies: 'JS, JQuery, CSS3 and HTML5.',
+      technologies: 'JS, JQuery, CSS3 & HTML5.',
       githubUrl: 'https://github.com/KevinTMtz/InfinityWebPage',
       webpageUrl: 'https://kevintmtz.github.io/InfinityWebPage/',
     },
@@ -47,7 +113,7 @@ const MyProjects = () => {
       points: [
         'Some videogames: 2D Platformer, Space Shooter, Game Maker, 3D Chicken Hunter, Hypercasual and more',
       ],
-      technologies: 'C# and Unity.',
+      technologies: 'C# & Unity.',
       githubUrl: 'https://github.com/KevinTMtz/UnityProjects',
     },
     {
@@ -56,7 +122,7 @@ const MyProjects = () => {
       description:
         'Solutions to competitive programming problems that I have done in my school club, websites and online competitions.',
       points: ['Hackerrank, SPOJ, CodeForces, ICPC'],
-      technologies: 'C++, Java and Python.',
+      technologies: 'C++, Java & Python.',
       githubUrl: 'https://github.com/KevinTMtz/CompetitiveProgramming',
     },
   ];

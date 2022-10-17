@@ -25,7 +25,9 @@ const Project: React.FC<ProjectProps> = ({ project }: ProjectProps) => (
           <li key={`${project.name}Point-${index}`}>{point}</li>
         ))}
       </ul>
-      <p>Technologies: {project.technologies}</p>
+      <p>
+        <strong>Technologies:</strong> {project.technologies}
+      </p>
       <div className='projectLinks'>
         {project.githubUrl && (
           <a href={project.githubUrl} target='_blank' rel='noreferrer'>
