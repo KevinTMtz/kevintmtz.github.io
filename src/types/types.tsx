@@ -7,3 +7,13 @@ export interface Information {
   description: string;
   points: string[];
 }
+
+export interface ProjectInfo {
+  name: string;
+  imagePath: string;
+  description: string;
+  points: string[];
+  technologies: string;
+  githubUrl?: string;
+  webpageUrl?: string;
+}

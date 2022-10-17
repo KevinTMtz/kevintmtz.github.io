@@ -76,17 +76,19 @@ h2.projectName {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .projectLinks > a {
   color: white;
   margin-top: 20px;
-  width: 48.5%;
+  padding: 0 10px;
   border: 2px solid white;
   border-radius: 10px;
   text-decoration: none;
   min-height: 40px;
   transition: 0.3s;
+  flex: 1 1 0px;
 }
 
 .projectLinks a:hover {
@@ -117,5 +119,9 @@ MARK: - Responsive
 
   .projectTitleDiv {
     border-top-right-radius: 20px;
+  }
+
+  .projectLinks {
+    gap: 12px;
   }
 }
