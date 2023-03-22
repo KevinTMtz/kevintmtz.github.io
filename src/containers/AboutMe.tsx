@@ -9,8 +9,8 @@ const AboutMe = () => {
     { text: 'TypeScript', imagePath: 'img/logos/typescript.svg', alt: 'TODO' },
     { text: 'JavaScript', imagePath: 'img/logos/javascript.svg', alt: 'TODO' },
     { text: 'Java', imagePath: 'img/logos/java.svg', alt: 'TODO' },
-    { text: 'Python', imagePath: 'img/logos/python.svg', alt: 'TODO' },
     { text: 'C#', imagePath: 'img/logos/csharp.svg', alt: 'TODO' },
+    { text: 'Python', imagePath: 'img/logos/python.svg', alt: 'TODO' },
     { text: 'Kotlin', imagePath: 'img/logos/kotlin.svg', alt: 'TODO' },
     { text: 'Swift', imagePath: 'img/logos/swift.svg', alt: 'TODO' },
     { text: 'C++', imagePath: 'img/logos/cplusplus.svg', alt: 'TODO' },
@@ -20,7 +20,7 @@ const AboutMe = () => {
 
   const technologies = [
     { text: 'React', imagePath: 'img/logos/react.svg', alt: 'TODO' },
-    { text: 'Unity', imagePath: 'img/logos/unity.svg', alt: 'TODO' },
+    { text: 'Azure', imagePath: 'img/logos/microsoftazure.svg', alt: 'TODO' },
     {
       text: 'Android Studio',
       imagePath: 'img/logos/androidstudio.svg',
@@ -29,6 +29,7 @@ const AboutMe = () => {
     { text: 'Xcode', imagePath: 'img/logos/xcode.svg', alt: 'TODO' },
     { text: 'Firebase', imagePath: 'img/logos/firebase.svg', alt: 'TODO' },
     { text: 'Anaconda', imagePath: 'img/logos/anaconda.svg', alt: 'TODO' },
+    { text: 'Unity', imagePath: 'img/logos/unity.svg', alt: 'TODO' },
     { text: 'Docker', imagePath: 'img/logos/docker.svg', alt: 'TODO' },
     { text: 'Postman', imagePath: 'img/logos/postman.svg', alt: 'TODO' },
     { text: 'Heroku', imagePath: 'img/logos/heroku.svg', alt: 'TODO' },
@@ -47,18 +48,27 @@ const AboutMe = () => {
       alt: 'TODO',
     },
     { text: 'Tensorflow', imagePath: 'img/logos/tensorflow.svg', alt: 'TODO' },
-    { text: 'Azure', imagePath: 'img/logos/microsoftazure.svg', alt: 'TODO' },
   ];
 
   const experience: Information[] = [
+    {
+      title: 'Microsoft, Software Engineer, October 2022 - March 2023',
+      description:
+        'Worked in the Supply Chain Data and Analytics team to enable more visibility across the supply chain of products such as Xbox and Surface.',
+      points: [
+        'Integrated multiple data sources within a single platform, and Automated weekly reports to monitor the usage of multiple key performance indicators of my organization, like databases, services and users in the last 52 weeks, with Azure Cubes, Azure Logs, Kusto and MySQL',
+        'Provided query and user level visibility with PowerBI on the usage of all our tables across multiple databases, and assisted on the efforts of detecting and removing hundreds of unused tables across our databases in the Azure MySQL Server of my organization',
+        "Fixed and mitigated multiple bugs in my team's production systems, and .NET & Azure data pipelines covering a wide range of business cases",
+      ],
+    },
     {
       title: 'Microsoft, Software Engineer Intern, June - August 2021',
       description:
         'Worked on an internal web portal for the establishment of data flows between databases and multiple teams located in different departments.',
       points: [
-        'Transitioned to a completely new front-end framework',
-        'Implemented account management and authentication',
-        'Developed with ASP.NET, React & JavaScript',
+        'Remade and tested the whole UI with a new front-end framework that met accessibility and consistency requirements of Microsoft products',
+        'Implemented account management and authentication for employees with Azure Active Directory',
+        'Developed with ASP.NET, React & JavaScript following the MVC design pattern',
       ],
     },
   ];
@@ -67,9 +77,9 @@ const AboutMe = () => {
     {
       title: 'Tecnológico de Monterrey, 2018-2022',
       description:
-        'Bachelor of Science, Computer Science and Technology. Major GPA: 4.0, Summa Cum Laude.',
+        'Bachelor of Science, Computer Science and Technology. Major GPA: 3.9, Summa Cum Laude.',
       points: [
-        'Relevant coursework: Machine Learning, Deep Learning, Intelligent Systems, Data structures, Computational mathematics, Advanced data bases, Operating systems, Algorithm Analysis and Software quality & testing',
+        'Relevant coursework: Machine Learning, Deep Learning, Intelligent Systems, Computational mathematics, Advanced Data Bases, Operating systems, Mobile and Web applications, Algorithm Analysis and Software Quality & Testing',
         'Groups: Competitive programming club',
       ],
     },
@@ -89,13 +99,13 @@ const AboutMe = () => {
       title: 'Honorable Mention at Gran Premio de México Finals, 2021',
       description:
         'ICPC (Internacional Collegiate Programming Contest) Foundation.',
-      points: ['Used C++ and Java'],
+      points: ['Solved multiple problems with C++ and Java'],
     },
     {
       title: "First place on Banorte's Challenge at HackMTY, 2019",
       description:
         'Developed an iOS app that detects and blocks phishing and advertisements.',
-      points: ['Blocks links & adds'],
+      points: ['Blocks dangerous Urls & adds'],
     },
     {
       title: 'Winner of the Lázaro Cárdenas prize, 2019',
